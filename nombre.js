@@ -13,7 +13,7 @@ export default class Nombre {
     }
 
     getIniciales(){
-        return `${this.nombre.charAt(0)}${this.apellidoPat.charAt(0)}${this.apellidoMat.charAt(0)}`
+        return `${this.nombre.charAt(4)}${this.apellidoPat.charAt(0)}${this.apellidoMat.charAt(0)}`
     }
 }
 
