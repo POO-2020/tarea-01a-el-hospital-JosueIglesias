@@ -17,8 +17,8 @@ export default class Nombre {
     }
 }
 
-let persona1 = new Nombre ("Josue Benjamin", "Iglesias", "Alcaraz")
+//let persona1 = new Nombre ("Josue Benjamin", "Iglesias", "Alcaraz")
 
-console.log(persona1.getNombreCompleto())
-console.log(persona1.getApellidoNombre())
-console.log(persona1.getIniciales())
+//console.log(persona1.getNombreCompleto())
+//console.log(persona1.getApellidoNombre())
+//console.log(persona1.getIniciales())
