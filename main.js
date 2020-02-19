@@ -1,5 +1,6 @@
 import Nombre from "./nombre.js"
 import Tiempo from "./tiempo.js"
+import Fecha from "./fecha.js"
 
 class Main {
     constructor() {
@@ -17,7 +18,9 @@ class Main {
         let horaPrueba = new Tiempo(3, 50, "PM")
         console.log(horaPrueba.getFormato12())
         console.log(horaPrueba.getFormato24())
-    }   
+    }
+    
+    probarFecha
 }
 let app = new Main()
 app.probarNombre()
