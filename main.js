@@ -7,7 +7,7 @@ class Main {
     }
 
     probarNombre() {
-        let persona1 = new Nombre("Josue Benjamin", "Iglesias", "valenciana")
+        let persona1 = new Nombre("Josue Benjamin", "borondongo", "valenciana")
         console.log(persona1.getNombreCompleto())
         console.log(persona1.getApellidoNombre())
         console.log(persona1.getIniciales())
