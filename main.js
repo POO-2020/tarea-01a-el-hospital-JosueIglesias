@@ -20,8 +20,13 @@ class Main {
         console.log(horaPrueba.getFormato24())
     }
     
-    probarFecha
+    probarFecha(){
+        let fecha1 = new Fecha(2007, 4, 4)
+        console.log(fecha1.getFecha())
+        console.log(fecha1.getAños())
+    }
 }
 let app = new Main()
 app.probarNombre()
 app.probarTiempo()
+app.probarFecha()
