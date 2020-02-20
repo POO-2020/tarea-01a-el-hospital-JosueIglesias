@@ -24,6 +24,9 @@ class Main {
         let fecha1 = new Fecha(2007, 4, 4)
         console.log(fecha1.getFecha())
         console.log(fecha1.getAños())
+        console.log(fecha1.getMeses())
+        console.log(fecha1.getSemanas())
+        console.log(fecha1.getDias())
     }
 }
 let app = new Main()

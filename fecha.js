@@ -36,4 +36,23 @@ export default class Fecha {
         let añosTranscurridos = fechaActual.getFullYear() - this.fecha.getFullYear()
         return `Han pasado ${añosTranscurridos} años desde ${this.fecha.getFullYear()}`
     }
+
+    getMeses() {
+        let fechaActual = new Date(Date.now())
+        let añosTranscurridos = fechaActual.getFullYear() - this.fecha.getFullYear()
+        return `Han pasado ${añosTranscurridos * 12} meses desde ${this.fecha.getFullYear()}` 
+    }
+
+    getSemanas(){
+        let fechaActual = new Date(Date.now())
+        let añosTranscurridos = fechaActual.getFullYear() - this.fecha.getFullYear()
+        return `Han pasado ${añosTranscurridos * 52} semanas desde ${this.fecha.getFullYear()}`
+
+    }
+
+    getDias(){
+        let fechaActual = new Date(Date.now())
+        let añosTranscurridos = fechaActual.getFullYear() - this.fecha.getFullYear()
+        return `Han pasado ${añosTranscurridos * 365} dias desde ${this.fecha.getFullYear()}`
+    }
 }
