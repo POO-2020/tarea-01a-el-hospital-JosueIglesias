@@ -28,7 +28,7 @@ export default class Fecha {
     }
 
     getFecha(){
-        return `${this.fecha.getDate()}/${this.fecha.getMonth() +1 }/${this.fecha.getFullYear()}`
+        return `${this.fecha.getDate()}/${this.nombreMes[this.fecha.getMonth()]}/${this.fecha.getFullYear()}`
     }
 
     getAños(){
@@ -55,4 +55,9 @@ export default class Fecha {
         let añosTranscurridos = fechaActual.getFullYear() - this.fecha.getFullYear()
         return `Han pasado ${añosTranscurridos * 365} dias desde ${this.fecha.getFullYear()}`
     }
+
+    getDiaFecha(){
+        return`${this.diaSemana[this.fecha.getDay()]}`
+    }
+
 }
