@@ -4,11 +4,15 @@ import Fecha from "./fecha.js"
 import Doctor from "./doctor.js"
 import Paciente from "./paciente.js"
 import Cita from "./cita.js"
+import Hospital from "./hospital.js"
 
 class Main {
     constructor() {
-        this.doctor1 = new Doctor(141452, "Pediatra", new Nombre("Jose Antonio", "Zarate", "Ornolos" ), 232323)
+        this.doctor1 = new Doctor(141452, "Pediatra", new Nombre("Jose Antonio", "Zarate", "Ornolos" ), "232-323-125")
+        this.doctor2 = new Doctor(968842, "Dermatologo", new Nombre("Eduark" , "Labristo", "Antipoda"), "555-92-92")
         this.paciente1 = new Paciente(new Nombre ("Anastasio arquimides", "brisuela", "Lopez" ), new Fecha(2000, 5, 25), 567432)
+
+        this.hospital = new Hospital ("Hospital Puerta de Fierro", "Av. Villalobos #504")
     }
 
     probarNombre() {
@@ -55,6 +59,15 @@ class Main {
         console.log(cita1.getPerfil())
     }
 
+    probarHospital() {
+        console.log("----------Hospital----------")
+        this.hospital.registrarDoctores(this.doctor1)
+        this.hospital.registrarDoctores(this.doctor2)
+        this.hospital.listarDoctores()
+
+    }
+    
+
 }
 let app = new Main()
 app.probarNombre()
@@ -63,3 +76,4 @@ app.probarFecha()
 app.probarDoctor()
 app.probarPaciente()
 app.probarCita()
+app.probarHospital()
