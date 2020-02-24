@@ -61,6 +61,8 @@ class Main {
 
     probarHospital() {
         console.log("----------Hospital----------")
+        console.log(this.hospital.nombre)
+        console.log(this.hospital.direccion)
         this.hospital.registrarDoctores(this.doctor1)
         this.hospital.registrarDoctores(this.doctor2)
         this.hospital.listarDoctores()

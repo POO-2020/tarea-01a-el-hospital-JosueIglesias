@@ -11,7 +11,7 @@ export default class Hospital {
     }
 
     listarDoctores(){
-        this.doctores.forEach(doctor => {
+        this.doctores.forEach((doctor, i) => {
             console.log(`${i + 1} ${doctor.getPerfil()}`)
         })
     }
@@ -21,7 +21,7 @@ export default class Hospital {
     }
 
     listarCitas(){
-        this.citas.forEach(cita => {
+        this.citas.forEach((cita, i )=> {
             console.log(`${i + 1} ${cita.getPerfil()}`)
         })
     }
